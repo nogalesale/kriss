@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="lapiceros.css"> </head>
+</head>
+<body>
+    <!-- Sección del Carrito -->
+    <section class="cart container" id="carrito">
+        <h2>Productos en el Carrito</h2>
+        <div class="cart-items" id="cartItems">
+            <p>No hay productos en el carrito.</p> <!-- Mensaje inicial -->
+        </div>
+        <div class="cart">
+            <h2>Carrito de Compras</h2>
+            <div class="cart-items" id="cartItemsContainer"></div>
+            <div id="cartTotal" class="cart-total">Total: $0.00</div> <!-- Espacio para el total -->
+        </div>
+        
+        <a href="index.html" class="btn checkout"> >Volver a inicio</a>
+        <a href="qr.html" class="header-button">paga por qr</a>
+    </section>
+
+
+    <section class="section container" id="lapiceros">
+        <h2>Lapiceros y Plumones</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="ventas/lapfaber.jpeg" alt="Lapicero Azul">
+                <h3>Lapiceros</h3>
+                <p>faber catell , en azul negro y rojo</p>
+                <p class="price">$4.50</p>
+                <button class="btn add-to-cart" data-name="Lapicero Azul" data-price="2.50">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/resalfaber.jpeg" alt="Plumones de Colores">
+                <h3>Plumones de Colores</h3>
+                <p>Set de 5, ideales para trabajos creativos</p>
+                <p class="price">$18.00</p>
+                <button class="btn add-to-cart" data-name="Plumones de Colores" data-price="5.00">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/resalbic.jpeg" alt="Resaltadores">
+                <h3>Resaltadores</h3>
+                <p>Pack de 4 colores fluorescentes</p>
+                <p class="price">$14.00</p>
+                <button class="btn add-to-cart" data-name="Resaltadores" data-price="3.50">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/colores 12.jpeg" alt="Resaltadores">
+                <h3>Colores</h3>
+                <p>faber castell de 12 unidades</p>
+                <p class="price">$14.00</p>
+                <button class="btn add-to-cart" data-name="Resaltadores" data-price="3.50">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/colores 24.jpeg" alt="Resaltadores">
+                <h3>Colores</h3>
+                <p>faber castell de 24 unidades</p>
+                <p class="price">$26.00</p>
+                <button class="btn add-to-cart" data-name="Resaltadores" data-price="3.50">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/portamin.jpeg" alt="Resaltadores">
+                <h3>Portaminas </h3>
+                <p>faber castell</p>
+                <p class="price">$10.00</p>
+                <button class="btn add-to-cart" data-name="Resaltadores" data-price="3.50">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/minas.jpeg" alt="Resaltadores">
+                <h3>Minas</h3>
+                <p>caja de minas</p>
+                <p class="price">$4.00</p>
+                <button class="btn add-to-cart" data-name="Resaltadores" data-price="3.50">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/lapiz.jpeg" alt="Resaltadores">
+                <h3>Lapiz </h3>
+                <p>faber castell</p>
+                <p class="price">$1.00</p>
+                <button class="btn add-to-cart" data-name="Resaltadores" data-price="3.50">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/lapices.jpeg" alt="Resaltadores">
+                <h3>Lapices</h3>
+                <p>Pack de 12 lapices a niveles</p>
+                <p class="price">$14.00</p>
+                <button class="btn add-to-cart" data-name="Resaltadores" data-price="3.50">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/marcador.jpeg" alt="Resaltadores">
+                <h3>Marcador grueso</h3>
+                <p>Por unidad</p>
+                <p class="price">$4.00</p>
+                <button class="btn add-to-cart" data-name="Resaltadores" data-price="3.50">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/marcadoresgrue.jpeg" alt="Resaltadores">
+                <h3>Marcadores</h3>
+                <p>Pack de 4 colores</p>
+                <p class="price">$10.00</p>
+                <button class="btn add-to-cart" data-name="Resaltadores" data-price="3.50">Añadir al carrito</button>
+            </div>
+            
+        </div>
+    </section>
+    <script>
+        let cartItems = []; // Array para almacenar los artículos del carrito
+const cartItemsContainer = document.getElementById('cartItemsContainer');
+const cartTotal = document.getElementById('cartTotal'); // Referencia al elemento de total
+
+// Event listeners para agregar productos al carrito
+document.querySelectorAll('.btn').forEach(button => {
+    button.addEventListener('click', () => {
+        const productName = button.parentElement.querySelector('h3').textContent;
+        const productPrice = parseFloat(button.parentElement.querySelector('.price').textContent.replace('$', ''));
+
+        // Agregar el producto al carrito
+        cartItems.push({ name: productName, price: productPrice });
+
+        // Actualizar la visualización del carrito
+        updateCartDisplay();
+    });
+});
+
+function updateCartDisplay() {
+    cartItemsContainer.innerHTML = ''; // Limpiar el contenido actual
+    let total = 0; // Inicializar el total
+
+    if (cartItems.length === 0) {
+        cartItemsContainer.innerHTML = '<p>No hay productos en el carrito.</p>';
+        cartTotal.textContent = 'Total: $0.00'; // Actualizar total
+        return;
+    }
+
+    cartItems.forEach((item, index) => {
+        const itemElement = document.createElement('div');
+        itemElement.textContent = `${item.name} - $${item.price.toFixed(2)}`;
+
+        // Crear el botón de eliminar
+        const removeButton = document.createElement('button');
+        removeButton.textContent = 'Eliminar';
+        removeButton.classList.add('btn', 'remove-from-cart');
+        removeButton.addEventListener('click', () => {
+            // Eliminar el producto del carrito
+            cartItems.splice(index, 1);
+            updateCartDisplay(); // Actualizar visualización
+        });
+
+        itemElement.appendChild(removeButton);
+        cartItemsContainer.appendChild(itemElement);
+
+        // Sumar el precio al total
+        total += item.price;
+    });
+
+    // Actualizar el total mostrado en el carrito
+    cartTotal.textContent = `Total: $${total.toFixed(2)}`;
+}
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pape.css">
+</head>
+<body>
+    <!-- Sección del Carrito -->
+    <section class="cart container" id="carrito">
+        <h2>Productos en el Carrito</h2>
+        <div class="cart-items" id="cartItems">
+            <p>No hay productos en el carrito.</p> <!-- Mensaje inicial -->
+        </div>
+        <div class="cart">
+            <h2>Carrito de Compras</h2>
+            <div class="cart-items" id="cartItemsContainer"></div>
+            <div id="cartTotal" class="cart-total">Total: $0.00</div> <!-- Espacio para el total -->
+        </div>
+        
+        <a href="index.html" class="btn checkout"> >Volver a inicio</a>
+        <a href="qr.html" class="header-button">paga por qr</a>
+    </section>
+
+
+    <section class="section container" id="papeleria">
+        <h2>Papelería</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="ventas/bondofi.jpeg" alt="Papel Bond">
+                <h3>Papel Bond</h3>
+                <p>Paquete de 500 hojas, tamaño carta</p>
+                <p class="price">$12.00</p>
+                <button class="btn add-to-cart" data-name="Papel Bond" data-price="12.00">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/hoja cart.jpeg" alt="Cartulina">
+                <h3>Cartulina</h3>
+                <p>Variedad de colores, tamaño carta</p>
+                <p class="price">$0.50 cada una</p>
+                <button class="btn add-to-cart" data-name="Cartulina" data-price="0.50">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/carpeta.jpeg" alt="Notas Adhesivas">
+                <h3>Hojas para carpeta </h3>
+                <p>Paquete de 500 hojas</p>
+                <p class="price">$15.00</p>
+                <button class="btn add-to-cart" data-name="Notas Adhesivas" data-price="3.00">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/traper.jpeg" alt="Notas Adhesivas">
+                <h3>Hojas para cartapacio</h3>
+                <p>Paquete de 500 hojas</p>
+                <p class="price">$18.00</p>
+                <button class="btn add-to-cart" data-name="Notas Adhesivas" data-price="3.00">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/pliego cartu.jpeg" alt="Notas Adhesivas">
+                <h3>Cartulinas</h3>
+                <p>Pliego grande</p>
+                <p class="price">$5.00</p>
+                <button class="btn add-to-cart" data-name="Notas Adhesivas" data-price="3.00">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/pliego bon.jpeg" alt="Notas Adhesivas">
+                <h3>Goma eva </h3>
+                <p>Pliego grande</p>
+                <p class="price">$5.00</p>
+                <button class="btn add-to-cart" data-name="Notas Adhesivas" data-price="3.00">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/hoja bon.jpeg" alt="Notas Adhesivas">
+                <h3>goma eva</h3>
+                <p>Hojas sueltas </p>
+                <p class="price">$1.50</p>
+                <button class="btn add-to-cart" data-name="Notas Adhesivas" data-price="3.00">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/paquete colores.jpeg" alt="Notas Adhesivas">
+                <h3>Hojas de colores</h3>
+                <p>Paquete de 500 hojas, varios colores</p>
+                <p class="price">$15.00</p>
+                <button class="btn add-to-cart" data-name="Notas Adhesivas" data-price="3.00">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/hojacolores.jpeg" alt="Notas Adhesivas">
+                <h3>Hojas de colores</h3>
+                <p>por unidad, varios colores</p>
+                <p class="price">$0.50</p>
+                <button class="btn add-to-cart" data-name="Notas Adhesivas" data-price="3.00">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/cuadercar.jpeg" alt="Notas Adhesivas">
+                <h3>Cuaderno anillado</h3>
+                <p>tamaño carta de 200 hojas</p>
+                <p class="price">$15.00</p>
+                <button class="btn add-to-cart" data-name="Notas Adhesivas" data-price="3.00">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/cuaderofi.jpeg" alt="Notas Adhesivas">
+                <h3>Cuaderno anillado</h3>
+                <p>tamaño oficio de 200 hojas</p>
+                <p class="price">$18.00</p>
+                <button class="btn add-to-cart" data-name="Notas Adhesivas" data-price="3.00">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/archicar.jpeg" alt="Notas Adhesivas">
+                <h3>Archivador rapido</h3>
+                <p>tamaño carta</p>
+                <p class="price">$3.00</p>
+                <button class="btn add-to-cart" data-name="Notas Adhesivas" data-price="3.00">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/archiofi.jpeg" alt="Notas Adhesivas">
+                <h3>Archivador rapido</h3>
+                <p>tamaño oficio</p>
+                <p class="price">$3.00</p>
+                <button class="btn add-to-cart" data-name="Notas Adhesivas" data-price="3.00">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/cartapas.jpeg" alt="Notas Adhesivas">
+                <h3>Cartapacio</h3>
+                <p>tamaño carta</p>
+                <p class="price">$25.00</p>
+                <button class="btn add-to-cart" data-name="Notas Adhesivas" data-price="3.00">Añadir al carrito</button>
+            </div>
+           
+        </div>
+    </section>
+    <script>
+        let cartItems = []; // Array para almacenar los artículos del carrito
+const cartItemsContainer = document.getElementById('cartItemsContainer');
+const cartTotal = document.getElementById('cartTotal'); // Referencia al elemento de total
+
+// Event listeners para agregar productos al carrito
+document.querySelectorAll('.btn').forEach(button => {
+    button.addEventListener('click', () => {
+        const productName = button.parentElement.querySelector('h3').textContent;
+        const productPrice = parseFloat(button.parentElement.querySelector('.price').textContent.replace('$', ''));
+
+        // Agregar el producto al carrito
+        cartItems.push({ name: productName, price: productPrice });
+
+        // Actualizar la visualización del carrito
+        updateCartDisplay();
+    });
+});
+
+function updateCartDisplay() {
+    cartItemsContainer.innerHTML = ''; // Limpiar el contenido actual
+    let total = 0; // Inicializar el total
+
+    if (cartItems.length === 0) {
+        cartItemsContainer.innerHTML = '<p>No hay productos en el carrito.</p>';
+        cartTotal.textContent = 'Total: $0.00'; // Actualizar total
+        return;
+    }
+
+    cartItems.forEach((item, index) => {
+        const itemElement = document.createElement('div');
+        itemElement.textContent = `${item.name} - $${item.price.toFixed(2)}`;
+
+        // Crear el botón de eliminar
+        const removeButton = document.createElement('button');
+        removeButton.textContent = 'Eliminar';
+        removeButton.classList.add('btn', 'remove-from-cart');
+        removeButton.addEventListener('click', () => {
+            // Eliminar el producto del carrito
+            cartItems.splice(index, 1);
+            updateCartDisplay(); // Actualizar visualización
+        });
+
+        itemElement.appendChild(removeButton);
+        cartItemsContainer.appendChild(itemElement);
+
+        // Sumar el precio al total
+        total += item.price;
+    });
+
+    // Actualizar el total mostrado en el carrito
+    cartTotal.textContent = `Total: $${total.toFixed(2)}`;
+}
+
+    </script>
+</body>
+</html>

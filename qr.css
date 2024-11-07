@@ -1,0 +1,64 @@
+/* Estilo general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Fondo de la página */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #4f78e6, #5ad1ff);
+    color: #333;
+    text-align: center;
+}
+
+/* Título */
+h1 {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+}
+
+/* Imagen */
+img {
+    border: 5px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 90%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Párrafo */
+p {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    max-width: 80%;
+    line-height: 1.6;
+}
+
+/* Enlace dentro del párrafo */
+p a {
+    color: #ffd700;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px solid #ffd700;
+    transition: color 0.3s ease, border-bottom-color 0.3s ease;
+}
+
+p a:hover {
+    color: #fff;
+    border-bottom-color: #fff;
+}

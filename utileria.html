@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="util.css"> </head>
+</head>
+<body>
+    <!-- Sección del Carrito -->
+    <section class="cart container" id="carrito">
+        <h2>Productos en el Carrito</h2>
+        <div class="cart-items" id="cartItems">
+            <p>No hay productos en el carrito.</p> <!-- Mensaje inicial -->
+        </div>
+        <div class="cart">
+            <h2>Carrito de Compras</h2>
+            <div class="cart-items" id="cartItemsContainer"></div>
+            <div id="cartTotal" class="cart-total">Total: $0.00</div> <!-- Espacio para el total -->
+        </div>
+        
+        <a href="index.html" class="btn checkout"> >Volver a inicio</a>
+        <a href="qr.html" class="header-button">paga por qr</a>
+    </section>
+
+
+    <section class="section container" id="utileria">
+        <h2>Utilería</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="ventas/estuche.jpeg" alt="Regla de 30 cm">
+                <h3>Regla de 30 cm</h3>
+                <p>Resistente y transparente, ideal para dibujo</p>
+                <p class="price">$1.50</p>
+                <button class="btn add-to-cart" data-name="Regla de 30 cm" data-price="1.50">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/compas.jpeg" alt="Compás">
+                <h3>Compás</h3>
+                <p>Perfecto para trazos precisos, incluye lápiz</p>
+                <p class="price">$2.00</p>
+                <button class="btn add-to-cart" data-name="Compás" data-price="2.00">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/tijera.jpeg" alt="Tijeras">
+                <h3>Tijeras</h3>
+                <p>Ergonómicas y de corte preciso</p>
+                <p class="price">$1.20</p>
+                <button class="btn add-to-cart" data-name="Tijeras" data-price="1.20">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/miga de pan.jpeg" alt="Tijeras">
+                <h3>Borrador</h3>
+                <p>Miga de pan</p>
+                <p class="price">$1.00</p>
+                <button class="btn add-to-cart" data-name="Tijeras" data-price="1.20">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/correc.jpeg" alt="Tijeras">
+                <h3>Corrector</h3>
+                <p>En forma liquida</p>
+                <p class="price">$3.50</p>
+                <button class="btn add-to-cart" data-name="Tijeras" data-price="1.20">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/tajador.jpeg" alt="Tijeras">
+                <h3>Tajador</h3>
+                <p>Con basurero</p>
+                <p class="price">$2.00</p>
+                <button class="btn add-to-cart" data-name="Tijeras" data-price="1.20">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/estile.jpeg" alt="Tijeras">
+                <h3>Estilete</h3>
+                <p>Para papel</p>
+                <p class="price">$5.00</p>
+                <button class="btn add-to-cart" data-name="Tijeras" data-price="1.20">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/clips.jpeg" alt="Tijeras">
+                <h3>Clips</h3>
+                <p>Caja de 100 clips</p>
+                <p class="price">$3.00</p>
+                <button class="btn add-to-cart" data-name="Tijeras" data-price="1.20">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/yurex.jpeg" alt="Tijeras">
+                <h3>cinta adhesiva</h3>
+                <p>transparente</p>
+                <p class="price">$2.50</p>
+                <button class="btn add-to-cart" data-name="Tijeras" data-price="1.20">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/masking.jpeg" alt="Tijeras">
+                <h3>Cinta maskin</h3>
+                <p>Blanca</p>
+                <p class="price">$5.00</p>
+                <button class="btn add-to-cart" data-name="Tijeras" data-price="1.20">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/estuchera.jpeg" alt="Tijeras">
+                <h3>Estuche</h3>
+                <p>de varios colores</p>
+                <p class="price">$15.00</p>
+                <button class="btn add-to-cart" data-name="Tijeras" data-price="1.20">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/wilson.jpeg" alt="Tijeras">
+                <h3>Mochila</h3>
+                <p>de diferentes modelos</p>
+                <p class="price">$60.00</p>
+                <button class="btn add-to-cart" data-name="Tijeras" data-price="1.20">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/maletin.jpeg" alt="Tijeras">
+                <h3>Maletin para laptop</h3>
+                <p>De cuero</p>
+                <p class="price">$30.00</p>
+                <button class="btn add-to-cart" data-name="Tijeras" data-price="1.20">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/calcu.jpeg" alt="Tijeras">
+                <h3>Calculadora</h3>
+                <p>Cientifica</p>
+                <p class="price">$60.00</p>
+                <button class="btn add-to-cart" data-name="Tijeras" data-price="1.20">Añadir al carrito</button>
+            </div>
+        </div>
+    </section>
+    <script>
+        let cartItems = []; // Array para almacenar los artículos del carrito
+const cartItemsContainer = document.getElementById('cartItemsContainer');
+const cartTotal = document.getElementById('cartTotal'); // Referencia al elemento de total
+
+// Event listeners para agregar productos al carrito
+document.querySelectorAll('.btn').forEach(button => {
+    button.addEventListener('click', () => {
+        const productName = button.parentElement.querySelector('h3').textContent;
+        const productPrice = parseFloat(button.parentElement.querySelector('.price').textContent.replace('$', ''));
+
+        // Agregar el producto al carrito
+        cartItems.push({ name: productName, price: productPrice });
+
+        // Actualizar la visualización del carrito
+        updateCartDisplay();
+    });
+});
+
+function updateCartDisplay() {
+    cartItemsContainer.innerHTML = ''; // Limpiar el contenido actual
+    let total = 0; // Inicializar el total
+
+    if (cartItems.length === 0) {
+        cartItemsContainer.innerHTML = '<p>No hay productos en el carrito.</p>';
+        cartTotal.textContent = 'Total: $0.00'; // Actualizar total
+        return;
+    }
+
+    cartItems.forEach((item, index) => {
+        const itemElement = document.createElement('div');
+        itemElement.textContent = `${item.name} - $${item.price.toFixed(2)}`;
+
+        // Crear el botón de eliminar
+        const removeButton = document.createElement('button');
+        removeButton.textContent = 'Eliminar';
+        removeButton.classList.add('btn', 'remove-from-cart');
+        removeButton.addEventListener('click', () => {
+            // Eliminar el producto del carrito
+            cartItems.splice(index, 1);
+            updateCartDisplay(); // Actualizar visualización
+        });
+
+        itemElement.appendChild(removeButton);
+        cartItemsContainer.appendChild(itemElement);
+
+        // Sumar el precio al total
+        total += item.price;
+    });
+
+    // Actualizar el total mostrado en el carrito
+    cartTotal.textContent = `Total: $${total.toFixed(2)}`;
+}
+
+    </script>
+
+
+</body>
+</html>

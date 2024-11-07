@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="libros.css"> </head>
+</head>
+<body>
+    
+   
+    
+    
+    <!-- Sección del Carrito -->
+    <section class="cart container" id="carrito">
+        <h2>Productos en el Carrito</h2>
+        <div class="cart-items" id="cartItems">
+            <p>No hay productos en el carrito.</p> <!-- Mensaje inicial -->
+        </div>
+        <div class="cart">
+            <h2>Carrito de Compras</h2>
+            <div class="cart-items" id="cartItemsContainer"></div>
+            <div id="cartTotal" class="cart-total">Total: $0.00</div> <!-- Espacio para el total -->
+        </div>
+        
+        <a href="index.html" class="btn checkout"> >Volver a inicio</a>
+        <a href="qr.html" class="header-button">paga por qr</a>
+    </section>
+
+
+    <section class="section container" id="libros">
+        <h2>Libros</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="ventas/1ero.jpeg" alt="Libro de Matemáticas">
+                <h3>Libro de Matemáticas</h3>
+                <p>Para 1ro. de secundaria</p>
+                <p class="price">$60.00</p>
+                <button class="btn add-to-cart" data-name="Libro de Matemáticas" data-price="15.00">Añadir al carrito</button>
+            </div>
+            
+            
+            <div class="product">
+                <img src="ventas/socia1.jpeg" alt="Libro de Matemáticas">
+                <h3>Libro de sociales</h3>
+                <p>Para 1ro. de secundaria</p>
+                <p class="price">$60.00</p>
+                <button class="btn add-to-cart" data-name="Libro de Matemáticas" data-price="15.00">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/reli1.jpeg" alt="Libro de Matemáticas">
+                <h3>Libro de religion</h3>
+                <p>Para 1ro. de secundaria</p>
+                <p class="price">$60.00</p>
+                <button class="btn add-to-cart" data-name="Libro de Matemáticas" data-price="15.00">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/ingles1.jpeg" alt="Libro de Matemáticas">
+                <h3>Libro de ingles</h3>
+                <p>Para 1ro. de secundaria</p>
+                <p class="price">$60.00</p>
+                <button class="btn add-to-cart" data-name="Libro de Matemáticas" data-price="15.00">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/lite1.jpeg" alt="Libro de Matemáticas">
+                <h3>Libro de literatura</h3>
+                <p>Para 1ro. de secundaria</p>
+                <p class="price">$60.00</p>
+                <button class="btn add-to-cart" data-name="Libro de Matemáticas" data-price="15.00">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/arte 1.jpeg" alt="Libro de Matemáticas">
+                <h3>Libro de artes plasticas</h3>
+                <p>Para 1ro. de secundaria</p>
+                <p class="price">$60.00</p>
+                <button class="btn add-to-cart" data-name="Libro de Matemáticas" data-price="15.00">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/1er2.jpeg" alt="Libro de Ciencias">
+                <h3>Libro de biologia</h3>
+                <p>Para 1ero. de secundaria, incluye experimentos</p>
+                <p class="price">$60.00</p>
+                <button class="btn add-to-cart" data-name="Libro de Ciencias" data-price="13.50">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/2do.jpeg" alt="Libro de Literatura">
+                <h3>Libro de Matemáticas</h3>
+                <p>Para 2do. de secundaria</p>
+                <p class="price">$60.00</p>
+                <button class="btn add-to-cart" data-name="Libro de Literatura" data-price="14.00">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/reli2.jpeg" alt="Libro de Literatura">
+                <h3>Libro de religion</h3>
+                <p>Para 2do. de secundaria</p>
+                <p class="price">$60.00</p>
+                <button class="btn add-to-cart" data-name="Libro de Literatura" data-price="14.00">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/socia2.jpeg" alt="Libro de Literatura">
+                <h3>Libro de sociales</h3>
+                <p>Para 2do. de secundaria</p>
+                <p class="price">$60.00</p>
+                <button class="btn add-to-cart" data-name="Libro de Literatura" data-price="14.00">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/ingles2.jpeg" alt="Libro de Literatura">
+                <h3>Libro de ingles</h3>
+                <p>Para 2do. de secundaria</p>
+                <p class="price">$60.00</p>
+                <button class="btn add-to-cart" data-name="Libro de Literatura" data-price="14.00">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/lite2.jpeg" alt="Libro de Literatura">
+                <h3>Libro de literatura</h3>
+                <p>Para 2do. de secundaria</p>
+                <p class="price">$60.00</p>
+                <button class="btn add-to-cart" data-name="Libro de Literatura" data-price="14.00">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/arte3.jpeg" alt="Libro de Literatura">
+                <h3>Libro de artes plasticas</h3>
+                <p>Para 2do. de secundaria</p>
+                <p class="price">$60.00</p>
+                <button class="btn add-to-cart" data-name="Libro de Literatura" data-price="14.00">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/2do2.jpeg" alt="Libro de Matemáticas">
+                <h3>Libro de biologia</h3>
+                <p>Para 2do. de secundaria</p>
+                <p class="price">$60.00</p>
+                <button class="btn add-to-cart" data-name="Libro de Matemáticas" data-price="15.00">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/3ro.jpeg" alt="Libro de Ciencias">
+                <h3>Libro de matematicas</h3>
+                <p>Para 3ro. de secundaria</p>
+                <p class="price">$60.50</p>
+                <button class="btn add-to-cart" data-name="Libro de Ciencias" data-price="13.50">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/quimi3.jpeg" alt="Libro de Ciencias">
+                <h3>Libro de quimica</h3>
+                <p>Para 3ro. de secundaria</p>
+                <p class="price">$60.50</p>
+                <button class="btn add-to-cart" data-name="Libro de Ciencias" data-price="13.50">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/fis3.jpeg" alt="Libro de Ciencias">
+                <h3>Libro de fisica</h3>
+                <p>Para 3ro. de secundaria</p>
+                <p class="price">$60.50</p>
+                <button class="btn add-to-cart" data-name="Libro de Ciencias" data-price="13.50">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/reli3.jpeg" alt="Libro de Ciencias">
+                <h3>Libro de religion</h3>
+                <p>Para 3ro. de secundaria</p>
+                <p class="price">$60.50</p>
+                <button class="btn add-to-cart" data-name="Libro de Ciencias" data-price="13.50">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/socia3.jpeg" alt="Libro de Ciencias">
+                <h3>Libro de sociales</h3>
+                <p>Para 3ro. de secundaria</p>
+                <p class="price">$60.50</p>
+                <button class="btn add-to-cart" data-name="Libro de Ciencias" data-price="13.50">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/ingles3.jpeg" alt="Libro de Ciencias">
+                <h3>Libro de ingles</h3>
+                <p>Para 3ro. de secundaria</p>
+                <p class="price">$60.50</p>
+                <button class="btn add-to-cart" data-name="Libro de Ciencias" data-price="13.50">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/lite 3.jpeg" alt="Libro de Ciencias">
+                <h3>Libro de literatura</h3>
+                <p>Para 3ro. de secundaria</p>
+                <p class="price">$60.50</p>
+                <button class="btn add-to-cart" data-name="Libro de Ciencias" data-price="13.50">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/arte4.jpeg" alt="Libro de Ciencias">
+                <h3>Libro de artes plasticas</h3>
+                <p>Para 3ro. de secundaria</p>
+                <p class="price">$60.50</p>
+                <button class="btn add-to-cart" data-name="Libro de Ciencias" data-price="13.50">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/3ro2.jpeg" alt="Libro de Literatura">
+                <h3>Libro de biologia</h3>
+                <p>Para 3ro. de secundaria</p>
+                <p class="price">$60.00</p>
+                <button class="btn add-to-cart" data-name="Libro de Literatura" data-price="14.00">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/4to.jpeg" alt="Libro de Matemáticas">
+                <h3>Libro de Matemáticas</h3>
+                <p>Para 4to. de secundaria</p>
+                <p class="price">$60.00</p>
+                <button class="btn add-to-cart" data-name="Libro de Matemáticas" data-price="15.00">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/quimi4.jpeg" alt="Libro de Matemáticas">
+                <h3>Libro de Matemáticas</h3>
+                <p>Para 4to. de secundaria</p>
+                <p class="price">$60.00</p>
+                <button class="btn add-to-cart" data-name="Libro de Matemáticas" data-price="15.00">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/fis4.jpeg" alt="Libro de Matemáticas">
+                <h3>Libro de fisica</h3>
+                <p>Para 4to. de secundaria</p>
+                <p class="price">$60.00</p>
+                <button class="btn add-to-cart" data-name="Libro de Matemáticas" data-price="15.00">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/reli4.jpeg" alt="Libro de Matemáticas">
+                <h3>Libro de religion</h3>
+                <p>Para 4to. de secundaria</p>
+                <p class="price">$60.00</p>
+                <button class="btn add-to-cart" data-name="Libro de Matemáticas" data-price="15.00">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/ingles4.jpeg" alt="Libro de Matemáticas">
+                <h3>Libro de ingles</h3>
+                <p>Para 4to. de secundaria</p>
+                <p class="price">$60.00</p>
+                <button class="btn add-to-cart" data-name="Libro de Matemáticas" data-price="15.00">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/socia4.jpeg" alt="Libro de Matemáticas">
+                <h3>Libro de sociales</h3>
+                <p>Para 4to. de secundaria</p>
+                <p class="price">$60.00</p>
+                <button class="btn add-to-cart" data-name="Libro de Matemáticas" data-price="15.00">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/arte 5.jpeg" alt="Libro de Matemáticas">
+                <h3>Libro de artes plasticas</h3>
+                <p>Para 4to. de secundaria</p>
+                <p class="price">$60.00</p>
+                <button class="btn add-to-cart" data-name="Libro de Matemáticas" data-price="15.00">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/4to2.jpeg" alt="Libro de Ciencias">
+                <h3>Libro de biologia</h3>
+                <p>Para 4to. de secundaria, incluye experimentos</p>
+                <p class="price">$60.50</p>
+                <button class="btn add-to-cart" data-name="Libro de Ciencias" data-price="13.50">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/5to.jpeg" alt="Libro de Literatura">
+                <h3>Libro de matematicas</h3>
+                <p>para 5to. de secundaria</p>
+                <p class="price">$60.00</p>
+                <button class="btn add-to-cart" data-name="Libro de Literatura" data-price="14.00">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/quimi5.jpeg" alt="Libro de Literatura">
+                <h3>Libro de quimica</h3>
+                <p>para 5to. de secundaria</p>
+                <p class="price">$60.00</p>
+                <button class="btn add-to-cart" data-name="Libro de Literatura" data-price="14.00">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/fis5.jpeg" alt="Libro de Literatura">
+                <h3>Libro de fisica</h3>
+                <p>para 5to. de secundaria</p>
+                <p class="price">$60.00</p>
+                <button class="btn add-to-cart" data-name="Libro de Literatura" data-price="14.00">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/reli5.jpeg" alt="Libro de Literatura">
+                <h3>Libro de religion</h3>
+                <p>para 5to. de secundaria</p>
+                <p class="price">$60.00</p>
+                <button class="btn add-to-cart" data-name="Libro de Literatura" data-price="14.00">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/socia5.jpeg" alt="Libro de Literatura">
+                <h3>Libro de sociales</h3>
+                <p>para 5to. de secundaria</p>
+                <p class="price">$60.00</p>
+                <button class="btn add-to-cart" data-name="Libro de Literatura" data-price="14.00">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/ingles5.jpeg" alt="Libro de Literatura">
+                <h3>Libro de ingles</h3>
+                <p>para 5to. de secundaria</p>
+                <p class="price">$60.00</p>
+                <button class="btn add-to-cart" data-name="Libro de Literatura" data-price="14.00">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/lite5.jpeg" alt="Libro de Literatura">
+                <h3>Libro de literatura</h3>
+                <p>para 5to. de secundaria</p>
+                <p class="price">$60.00</p>
+                <button class="btn add-to-cart" data-name="Libro de Literatura" data-price="14.00">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/arte6.jpeg" alt="Libro de Literatura">
+                <h3>Libro de artes plasticas</h3>
+                <p>para 5to. de secundaria</p>
+                <p class="price">$60.00</p>
+                <button class="btn add-to-cart" data-name="Libro de Literatura" data-price="14.00">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/5to2.jpeg" alt="Libro de Matemáticas">
+                <h3>Libro de biologia</h3>
+                <p>Para 5to. de secundaria</p>
+                <p class="price">$60.00</p>
+                <button class="btn add-to-cart" data-name="Libro de Matemáticas" data-price="15.00">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/6to.jpeg" alt="Libro de Ciencias">
+                <h3>Libro de matematicas</h3>
+                <p>Para 6to. de secundaria</p>
+                <p class="price">$60.50</p>
+                <button class="btn add-to-cart" data-name="Libro de Ciencias" data-price="13.50">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/quimi6.jpeg" alt="Libro de Ciencias">
+                <h3>Libro de quimica</h3>
+                <p>Para 6to. de secundaria</p>
+                <p class="price">$60.50</p>
+                <button class="btn add-to-cart" data-name="Libro de Ciencias" data-price="13.50">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/fis6.jpeg" alt="Libro de Ciencias">
+                <h3>Libro de fisica</h3>
+                <p>Para 6to. de secundaria</p>
+                <p class="price">$60.50</p>
+                <button class="btn add-to-cart" data-name="Libro de Ciencias" data-price="13.50">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/reli6.jpeg" alt="Libro de Ciencias">
+                <h3>Libro de religion</h3>
+                <p>Para 6to. de secundaria</p>
+                <p class="price">$60.50</p>
+                <button class="btn add-to-cart" data-name="Libro de Ciencias" data-price="13.50">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/socia6.jpeg" alt="Libro de Ciencias">
+                <h3>Libro de sociales</h3>
+                <p>Para 6to. de secundaria</p>
+                <p class="price">$60.50</p>
+                <button class="btn add-to-cart" data-name="Libro de Ciencias" data-price="13.50">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/ingles6.jpeg" alt="Libro de Ciencias">
+                <h3>Libro de ingles</h3>
+                <p>Para 6to. de secundaria</p>
+                <p class="price">$60.50</p>
+                <button class="btn add-to-cart" data-name="Libro de Ciencias" data-price="13.50">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/lite 6.jpeg" alt="Libro de Literatura">
+                <h3>Libro de literatura</h3>
+                <p>para 5to. de secundaria</p>
+                <p class="price">$60.00</p>
+                <button class="btn add-to-cart" data-name="Libro de Literatura" data-price="14.00">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/arte 2.jpeg" alt="Libro de Ciencias">
+                <h3>Libro de artes plasticas</h3>
+                <p>Para 6to. de secundaria</p>
+                <p class="price">$60.50</p>
+                <button class="btn add-to-cart" data-name="Libro de Ciencias" data-price="13.50">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="ventas/6to2.jpeg" alt="Libro de Literatura">
+                <h3>Libro de biologia</h3>
+                <p>Para 6to de secundaria</p>
+                <p class="price">$60.00</p>
+                <button class="btn add-to-cart" data-name="Libro de Literatura" data-price="14.00">Añadir al carrito</button>
+            </div>
+        </div>
+    </section>
+    <script>
+        let cartItems = []; // Array para almacenar los artículos del carrito
+const cartItemsContainer = document.getElementById('cartItemsContainer');
+const cartTotal = document.getElementById('cartTotal'); // Referencia al elemento de total
+
+// Event listeners para agregar productos al carrito
+document.querySelectorAll('.btn').forEach(button => {
+    button.addEventListener('click', () => {
+        const productName = button.parentElement.querySelector('h3').textContent;
+        const productPrice = parseFloat(button.parentElement.querySelector('.price').textContent.replace('$', ''));
+
+        // Agregar el producto al carrito
+        cartItems.push({ name: productName, price: productPrice });
+
+        // Actualizar la visualización del carrito
+        updateCartDisplay();
+    });
+});
+
+function updateCartDisplay() {
+    cartItemsContainer.innerHTML = ''; // Limpiar el contenido actual
+    let total = 0; // Inicializar el total
+
+    if (cartItems.length === 0) {
+        cartItemsContainer.innerHTML = '<p>No hay productos en el carrito.</p>';
+        cartTotal.textContent = 'Total: $0.00'; // Actualizar total
+        return;
+    }
+
+    cartItems.forEach((item, index) => {
+        const itemElement = document.createElement('div');
+        itemElement.textContent = `${item.name} - $${item.price.toFixed(2)}`;
+
+        // Crear el botón de eliminar
+        const removeButton = document.createElement('button');
+        removeButton.textContent = 'Eliminar';
+        removeButton.classList.add('btn', 'remove-from-cart');
+        removeButton.addEventListener('click', () => {
+            // Eliminar el producto del carrito
+            cartItems.splice(index, 1);
+            updateCartDisplay(); // Actualizar visualización
+        });
+
+        itemElement.appendChild(removeButton);
+        cartItemsContainer.appendChild(itemElement);
+
+        // Sumar el precio al total
+        total += item.price;
+    });
+
+    // Actualizar el total mostrado en el carrito
+    cartTotal.textContent = `Total: $${total.toFixed(2)}`;
+}
+
+    </script>
+    <script>
+        function filterContent() {
+            const searchTerm = document.querySelector('.search-input').value.toLowerCase();
+            const items = document.querySelectorAll('.item');
+            
+            items.forEach(item => {
+                if (item.textContent.toLowerCase().includes(searchTerm)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+    </script>
+    
+
+</body>
+</html>
